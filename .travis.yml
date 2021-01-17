@@ -12,7 +12,7 @@ after_success:
   - docker build -t eltonokawa/udemy-multi-client ./client
   - docker build -t eltonokawa/udemy-multi-nginx ./nginx
   - docker build -t eltonokawa/udemy-multi-server ./server
-  - docker built -t eltonokawa/udemy-multi-worker ./worker
+  - docker build -t eltonokawa/udemy-multi-worker ./worker
   # login to dockercli
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # push to docker hub
